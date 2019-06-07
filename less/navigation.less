@@ -7,14 +7,21 @@
   margin: 0 auto;
   padding-top: 2%;
   background-color: @nav-bg;
+  @media@phone {
+    width: 80vw;
+  }
   nav {
-    .display(row, space-around, center);
+    .display(row, center, center);
     font-size: 2rem;
     padding: 2% 0 2%;
-    width: 50%;
+    width: 80%;
+    @media@phone {
+      width: 100%;
+    }
     a {
       text-decoration: none;
       color: @nav-font;
+      margin-left: 3%;
 
       &:hover {
         color: lighten(@nav-font, 30%);
